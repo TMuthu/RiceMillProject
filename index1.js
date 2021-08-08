@@ -18,5 +18,5 @@ function showslide(){
         console.log(slideindex);
         slideindex = 0;
     }  
-    setTimeout(showslide, 2000);  
+    setTimeout(showslide, 4000);  
 }
