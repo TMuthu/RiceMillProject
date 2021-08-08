@@ -24,6 +24,7 @@ main{
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('Images/Homepage1.jpg');
+    /* background-image: url('Images/Homepage1.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
