@@ -11,6 +11,7 @@ nav{
     color: black;   
     font-weight: 800; 
     font-family: 'Playfair Display', serif;
+    /* background-color: white; */
 }
 nav ul{
     display: flex;
@@ -108,7 +109,43 @@ main .section{
     margin-left: 10px;
     background-color: white;
 }
-
+.brand{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.brandtitle{
+    width: 100vw;
+    min-height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+.brandtitledesc{
+    width: 100vw;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Merienda One', cursive;
+}
+.brandcontainer{
+    width: 100vw;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.brandimg{
+    padding : 20px;
+    border-radius: 30px;
+}
 
 
 
