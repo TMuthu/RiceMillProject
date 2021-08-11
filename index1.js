@@ -20,3 +20,14 @@ function showslide(){
     }  
     setTimeout(showslide, 4000);  
 }
+
+// //product flip card
+// const frontcard = document.querySelectorAll('.brandcard');
+// const maincard = document.querySelectorAll('.brandimagecontainer');
+
+// // maincard.addEventListener('click',()=>{
+// //     frontcard.style.transform = 'rotateY(180deg)';
+// // });
+// window.onclick = e => {
+//     e.target.style.transform = 'rotateY(180deg)';
+// }
