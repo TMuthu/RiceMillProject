@@ -4,7 +4,6 @@ let slideindex = 0;
 showslide();
 
 function showslide(){
-    console.log(slideindex);
     for(var i=0;i<slider.length;i++){
         slider[i].style.display = 'none';
     }
@@ -20,14 +19,16 @@ function showslide(){
     }  
     setTimeout(showslide, 4000);  
 }
-
-// //product flip card
-// const frontcard = document.querySelectorAll('.brandcard');
-// const maincard = document.querySelectorAll('.brandimagecontainer');
-
-// // maincard.addEventListener('click',()=>{
-// //     frontcard.style.transform = 'rotateY(180deg)';
-// // });
-// window.onclick = e => {
-//     e.target.style.transform = 'rotateY(180deg)';
-// }
+const navbar = document.querySelector('#navbar');
+document.addEventListener('DOMContentLoaded',()=>{
+    window.addEventListener('scroll',()=>{
+        const top  = document.documentElement.scrollTop;
+        console.log(top);
+        if(top>20){
+            navbar.style.backgroundColor = 'white';
+        }
+        else{
+            navbar.style.backgroundColor = '';
+        }
+    })
+})
