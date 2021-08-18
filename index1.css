@@ -223,7 +223,10 @@ main .section{
     width: 200px;
     height: 250px;
     box-sizing: content-box;
-    border: 2px solid black;
+    border-radius: 50%;
+}
+.varietycard img{
+    border-radius: 50%;
 }
 .varietyname{
     width: 100%;
