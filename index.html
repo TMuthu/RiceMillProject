@@ -18,7 +18,7 @@
         <ul>
             <a href="#main"><li>Home</li></a>
             <!-- <li>About Us</li> -->
-            <li>Contact Us</li>
+            <a href="#contactpointer"><li>Contact Us</li></a>
         </ul>
     </nav>
     <main id='main'>
@@ -134,9 +134,35 @@
         </div>
         
         <div class="varietytitle">
-            <h2>Varieties</h2>
+            <h2>Varieties & Products</h2>
         </div>
-        <div class="varietycontainer">
+
+        <div class="varitiesproductscontainer">
+            <div class="productscontainer">
+                <ul>
+                    <li id='riceheader' style="border-bottom: 2px solid black;">Rice</li>
+                    <li id='ricebranheader'>Rice bran</li>
+                </ul>
+            </div>
+            <div class="varietiescontainer">
+                <ul id='ricevarieties'>
+                    <li>Rajabogam Ponni Rice</li>
+                    <li>Khichdi Ponni Rice</li>
+                    <li>ponni idisal Rice</li>
+                    <li>IR - 20</li>
+                    <li>BPT</li>
+                    <li>Delux</li>
+                    <li>HNR</li>
+                    <li>HMT</li>
+                </ul>
+                <ul id='branvarities' style="display: none;">
+                    <li>Coarse Bran (from the first whitening step)</li>
+                    <li>Fine Bran (from second whitening step)</li>
+                    <li>Polish (from the polishing step).</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="varietycontainer">
             <div class="varietycard">
                 <img src="Images/RiceVarieties/BPT1.jpg" alt="BPT" width="200px" height="200px" class="variety1">
                 <div class="varietyname">
@@ -166,6 +192,63 @@
                 <div class="varietyname">
                     <h3>RNR</h3>
                 </div>
+            </div>
+        </div> -->
+        <!-- <div class="producttitle">
+            <h2>Products</h2>
+        </div>
+        <div class="productcontainer">
+        </div> -->
+        <div id="contactpointer"></div>
+        <div class="contactus" id="contactus">
+            <div class="addresssection">
+                <div class="contactinfo">
+                    <h2>Contact Info</h2>
+                    <div class="info">
+                        <div class="infoicon">
+                            <img src="Images/Icons/location.png" alt="address">
+                        </div>
+                        <p>Rajalakshmi Modern Rice Mill<br>
+                            1147/3A-1, Ramapattinam Road, Sivanmalai POST, Kangeyam, Tiruppur, Tamil Nadu, 638701
+                        </p>
+                    </div>
+                    <div class="info">
+                        <div class="infoicon">
+                            <img src="Images/Icons/mail.png" alt="email">
+                        </div>
+                        <p>
+                            uncle@gmail.com
+                        </p>
+                    </div>
+                    <div class="info">
+                        <div class="infoicon">
+                            <img src="Images/Icons/phone.png" alt="email">
+                        </div>
+                        <p>
+                            +91 9842805711
+                        </p>
+                    </div>
+                    <div class="socialmediacontainer">
+                        <img src="Images/Icons/whatsapp.png" alt="email">
+                        <img src="Images/Icons/facebook.png" alt="email">
+                        <img src="Images/Icons/twitter.png" alt="email">
+                        <img src="Images/Icons/instagram.png" alt="email">
+                    </div>
+                </div>
+            </div>
+            <div class="contactformsection">
+                <h2>Quick Contact</h2>
+                <form action="" class="contactform">
+                    <label for="name">Full Name</label>
+                    <input type="text" id='name'>
+                    <label for="phone">Mobile No</label>
+                    <input type="text" id='phone'>
+                    <label for="email">Email ID</label>
+                    <input type="email" id='email'>
+                    <label for="message">Message</label>
+                    <input type="textarea" id='message'>
+                    <button id='submit'>Send</button>
+                </form>
             </div>
         </div>
 </body>

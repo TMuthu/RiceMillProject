@@ -21,7 +21,7 @@ function showslide(){
 }
 const navbar = document.querySelector('#navbar');
 document.addEventListener('DOMContentLoaded',()=>{
-    window.addEventListener('scroll',()=>{
+        window.addEventListener('scroll',()=>{
         const top  = document.documentElement.scrollTop;
         console.log(top);
         if(top>20){
@@ -32,3 +32,32 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     })
 })
+
+const btnricevar = document.querySelector('#riceheader');
+const btnbranvar = document.querySelector('#ricebranheader');
+const ricevarlist = document.querySelector('#ricevarieties');
+const branvarlist = document.querySelector('#branvarities');
+
+
+btnricevar.addEventListener('click',()=>{
+    branvarlist.style.display = 'none';
+    ricevarlist.style.display = 'flex';
+    btnricevar.style.borderBottom = '2px solid black';
+    btnbranvar.style.borderBottom = 'none';
+})
+
+btnbranvar.addEventListener('click',()=>{
+    branvarlist.style.display = 'flex';
+    ricevarlist.style.display = 'none';
+    btnbranvar.style.borderBottom = '2px solid black';
+    btnricevar.style.borderBottom = 'none';
+})
+
+const btnsubmit = document.querySelector('#submit');
+
+btnsubmit.addEventListener('click',()=>{
+    alert('Development is in progress');
+})
+
+
+

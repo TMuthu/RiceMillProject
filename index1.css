@@ -2,12 +2,12 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 nav{
     width: 100vw;
     height: 50px;
     position: fixed;
-    /* top: 2%; */
     color: black;   
     font-weight: 800; 
     font-family: 'Playfair Display', serif;
@@ -112,7 +112,7 @@ main .section{
     margin-left: 10px;
     background-color: white;
 }
-.brandtitle, .infratitle, .varietytitle{
+.brandtitle, .infratitle, .varietytitle, .producttitle{
     width: 100vw;
     min-height: 50px;
     margin-top: 10px;
@@ -173,15 +173,17 @@ main .section{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #7C7A7A;
 }
 .gallery{
     width: 60vw;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% repeat(4, 15%) 15%;
+    grid-template-rows: 20% repeat(4, 13%) 22%;
     grid-row-gap: 1%;
     grid-column-gap: 10px;
+    padding-top: 10px;
 }
 @media screen and  (min-width : 320px)  and (max-width: 700px){
     
@@ -199,7 +201,7 @@ main .section{
 .gallery img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 .img1{
     grid-column: 1/3;
@@ -234,8 +236,207 @@ main .section{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+.productcontainer{
+    width: 100vw;
+    height: 700px;
+    background: url('Images/Ox2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactus{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.addresssection{
+    width: 50%;
+    height: 100%;
+    background-color: #494949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactinfo{
+    width: 80%;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    width: 100%;
+    min-height: 10%;
+    padding: 20px;
+}
+.infoicon img{
+    width: 30px;
+    height: 30px;
+}
+.info p{
+    min-height: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.socialmediacontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10%;
+    padding: 20px;
+}
+.socialmediacontainer img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.contactformsection{
+    width: 50%;
+    height: 100%;
+    background-color: #7C7A7A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+} 
+.contactformsection h2{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contactform{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.contactform label{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    color: black;
+}
+.contactform input{
+    width: 100%;
+    height: 30px;
+    all: unset;
+    border-bottom: 2px solid white;
+}
+.contactform button{
+    all: unset;
+    width: 30%;
+    height: 30px;
+    margin: 10px 0 10px 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.contactform button:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:700px) {
+    .contactus{
+        width: 100vw;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 70px;
+    }
+    .contactinfo{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .addresssection{
+        width: 100%;
+        height: 100%;
+        background-color: #494949;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactformsection{
+        width: 100%;
+        height: 100%;
+        background-color: #7C7A7A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    } 
+    .contactformsection h2{
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.varitiesproductscontainer{
+    width: 100vw;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.productscontainer{
+    width: 100%;
+    height: 50px;
+    background-color: #4C5B5C;
+}
+.productscontainer ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.productscontainer ul li{
+    margin-left: 50px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.varietiescontainer{
+    width: 100%;
+    height: 350px;
+    background-color: #4C5B5C;
+    position: relative;
+}
+.varietiescontainer ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.varietiescontainer ul li{
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+
 
 
 
