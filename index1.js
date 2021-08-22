@@ -19,16 +19,22 @@ function showslide(){
     }  
     setTimeout(showslide, 4000);  
 }
-const navbar = document.querySelector('#navbar');
+var navbar = document.querySelector('#navbar');
+var navbarlist = document.querySelector('#navbarlist');
+var navbarmillnamelist = document.querySelector('#millname');
+
 document.addEventListener('DOMContentLoaded',()=>{
         window.addEventListener('scroll',()=>{
         const top  = document.documentElement.scrollTop;
         console.log(top);
-        if(top>20){
+        if(top>100){
             navbar.style.backgroundColor = 'white';
+            navbarmillnamelist.innerHTML = 'Rajalakshmi Rice Mill';
+            
         }
         else{
             navbar.style.backgroundColor = '';
+            navbarmillnamelist.innerHTML = '';
         }
     })
 })

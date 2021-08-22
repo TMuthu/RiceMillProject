@@ -23,7 +23,9 @@ nav ul a{
 }
 
 nav ul a li{
-    padding: 15px;
+    /* padding: 15px; */
+    margin-top: 15px;
+    margin-right: 15px;
 }
 main{
     width: 100vw;
@@ -212,38 +214,6 @@ main .section{
     grid-row: 6/7;
 }
 
-.varietycontainer{
-    width: 100vw;
-    min-height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.varietycard{
-    margin: 20px;
-    width: 200px;
-    height: 250px;
-    box-sizing: content-box;
-    border-radius: 50%;
-}
-.varietycard img{
-    border-radius: 50%;
-}
-.varietyname{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.productcontainer{
-    width: 100vw;
-    height: 700px;
-    background: url('Images/Ox2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .contactus{
     width: 100vw;
     height: 100vh;
@@ -353,7 +323,6 @@ main .section{
         justify-content: center;
         align-items: center;
         color: white;
-        margin-top: 70px;
     }
     .contactinfo{
         width: 100%;
@@ -391,15 +360,19 @@ main .section{
 .varitiesproductscontainer{
     width: 100vw;
     height: 400px;
-    color: white;
     font-size: 20px;
+    font-weight: 800;
     margin-top: 10px;
+    background-image: url('Images/varietybackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    background-blend-mode: luminosity;
 }
 
 .productscontainer{
     width: 100%;
     height: 50px;
-    background-color: #4C5B5C;
 }
 .productscontainer ul{
     list-style: none;
@@ -419,7 +392,6 @@ main .section{
 .varietiescontainer{
     width: 100%;
     height: 350px;
-    background-color: #4C5B5C;
     position: relative;
 }
 .varietiescontainer ul{
