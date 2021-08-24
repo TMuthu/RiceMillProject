@@ -330,7 +330,7 @@ main .section{
         justify-content: center;
         align-items: center;
         color: white;
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
     .contactinfo{
         width: 100%;
@@ -367,7 +367,7 @@ main .section{
 
 .varitiesproductscontainer{
     width: 100vw;
-    height: 400px;
+    height: 500px;
     font-size: 20px;
     font-weight: 800;
     margin-top: 10px;
