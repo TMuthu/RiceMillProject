@@ -14,7 +14,7 @@ function showslide(){
     slider[slideindex].style.display = 'flex';
     slideindex++;
     if(slideindex == slider.length){
-        console.log(slideindex);
+        // console.log(slideindex);
         slideindex = 0;
     }  
     setTimeout(showslide, 4000);  
@@ -26,7 +26,7 @@ var navbarmillnamelist = document.querySelector('#millname');
 document.addEventListener('DOMContentLoaded',()=>{
         window.addEventListener('scroll',()=>{
         const top  = document.documentElement.scrollTop;
-        console.log(top);
+        // console.log(top);
         if(top>100){
             navbar.style.backgroundColor = 'white';
             // navbarmillnamelist.innerHTML = 'Rajalakshmi Rice Mill';
@@ -61,9 +61,28 @@ btnbranvar.addEventListener('click',()=>{
 
 const btnsubmit = document.querySelector('#submit');
 
+
+
 btnsubmit.addEventListener('click',()=>{
-    alert('Development is in progress');
+    var username = document.getElementById('name').value;
+    var phone = document.querySelector('#phone').value;
+    var message = document.querySelector('#message').value;
+    var email = document.querySelector('#email').value;
+    var subject = 'User Query';
+    var body = `Name : ${username} phone : ${phone} message: ${message}`;
+    // console.log(body);
+    
+    if(username && phone && message && email)
+    window.open(`mailto:rajalakshmimrmkgm@gmail.com?subject=${subject}&body=${body}`);
+    else
+    alert('Fill all fields');
+
+    document.getElementById('name').value = '';
+    document.querySelector('#phone').value = '';
+    document.querySelector('#message').value = '';
+    document.querySelector('#email').value = '';
 })
+
 
 function mapContent(){
     var api_key = 'YOUR_API_KEY';
@@ -102,7 +121,9 @@ const getdir = document.querySelector('#getdirection');
 
 getdir.addEventListener('click',()=>{
     //location.replace("maps.html");
-    window.open('maps.html', '_blank').focus();
+    window.open('maps.html', '_blank');
 })
+
+
 
 

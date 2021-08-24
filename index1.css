@@ -311,7 +311,7 @@ main .section{
     all: unset;
     width: 30%;
     height: 30px;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
     background-color: white;
     color: black;
     text-align: center;
@@ -371,11 +371,15 @@ main .section{
     font-size: 20px;
     font-weight: 800;
     margin-top: 10px;
-    background-image: url('Images/varietybackground.jpg');
-    background-repeat: no-repeat;
+    background: url('Images/varietybackground1.jpg') no-repeat center center fixed;
+    /* background-repeat: no-repeat;
     background-size: cover;
     color: #040303;
-    background-blend-mode: luminosity;
+    background-blend-mode: luminosity; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .productscontainer{
@@ -426,7 +430,7 @@ main .section{
     background-size: cover;
     width: 30px;
     height: 30px;
-  }
+}
 
 
 
