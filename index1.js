@@ -1,6 +1,9 @@
 const slider = document.querySelectorAll('.section');
 const sliderdots = document.querySelectorAll('.dot');
 let slideindex = 0;
+let flag = 0;
+
+//Slide Show On Home Page
 showslide();
 
 function showslide(){
@@ -14,7 +17,6 @@ function showslide(){
     slider[slideindex].style.display = 'flex';
     slideindex++;
     if(slideindex == slider.length){
-        // console.log(slideindex);
         slideindex = 0;
     }  
     setTimeout(showslide, 4000);  
@@ -26,11 +28,9 @@ var navbarmillnamelist = document.querySelector('#millname');
 document.addEventListener('DOMContentLoaded',()=>{
         window.addEventListener('scroll',()=>{
         const top  = document.documentElement.scrollTop;
-        // console.log(top);
         if(top>100){
             navbar.style.backgroundColor = 'white';
-            // navbarmillnamelist.innerHTML = 'Rajalakshmi Rice Mill';
-            
+            // navbarmillnamelist.innerHTML = 'Rajalakshmi Rice Mill';   
         }
         else{
             navbar.style.backgroundColor = '';
@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     })
 })
+
+//Switching Between Varities Tab
 
 const btnricevar = document.querySelector('#riceheader');
 const btnbranvar = document.querySelector('#ricebranheader');
@@ -59,9 +61,9 @@ btnbranvar.addEventListener('click',()=>{
     btnricevar.style.borderBottom = 'none';
 })
 
+// Form Data Processing
+
 const btnsubmit = document.querySelector('#submit');
-
-
 
 btnsubmit.addEventListener('click',()=>{
     var username = document.getElementById('name').value;
@@ -84,8 +86,9 @@ btnsubmit.addEventListener('click',()=>{
 })
 
 
+//Map Display
 function mapContent(){
-    var api_key = 'YOUR_API_KEY';
+    var api_key = 'YDXtV3JoDYm7aFQbbCXAlAqGnwrn8nlND';
     var latAndLong = {lat: 11.0214697001936, lng:  77.53150516931241}; 
     var zoomLevel = 14;
     var yourAddress = 'Rajalakshmi Modern Rice Mill, 1147/3A-1, Ramapattinam Road, Sivanmalai POST, Kangeyam, Tiruppur, Tamil Nadu, 638701';
@@ -120,9 +123,40 @@ function mapContent(){
 const getdir = document.querySelector('#getdirection');
 
 getdir.addEventListener('click',()=>{
-    //location.replace("maps.html");
     window.open('maps.html', '_blank');
 })
+
+//title line animation
+const brandtitleline = document.querySelector('#Brandtitleline');
+const infratitleline = document.querySelector('#infratitleline');
+const varietytitleline = document.querySelector('#varietytitleline');
+
+function isScrolledIntoView(el){
+    const { top, bottom } = el.getBoundingClientRect();
+    return top >= 0 && bottom <= window.innerHeight;
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+
+    window.addEventListener('scroll',()=>{
+        const top  = document.documentElement.scrollTop;
+        console.log(top);
+        if(isScrolledIntoView(brandtitleline)){
+              brandtitleline.style.animation = 'titlelineanimation 1s ease-out';
+        }
+        if(isScrolledIntoView(infratitleline)){
+            infratitleline.style.animation = 'titlelineanimation 1s ease-out';
+        }
+        if(isScrolledIntoView(varietytitleline)){
+            varietytitleline.style.animation = 'titlelineanimation 1s ease-out';
+        }
+    }) 
+});
+
+
+
+
+
 
 
 
