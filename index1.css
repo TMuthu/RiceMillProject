@@ -6,6 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
+    cursor: pointer;
 }
 body{
     overflow-x: hidden;
